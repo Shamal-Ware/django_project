@@ -1,0 +1,344 @@
+2019-09-23 00:03:02,585 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:03:12,017 [Thread-2    ] [INFO ] [django.server       ]  "GET / HTTP/1.1" 200 1742
+2019-09-23 00:03:34,888 [Thread-3    ] [INFO ] [TrackUser.logger    ]  inside login
+2019-09-23 00:03:34,889 [Thread-3    ] [INFO ] [TrackUser.logger    ]  username : shamal
+2019-09-23 00:03:34,890 [Thread-3    ] [INFO ] [TrackUser.logger    ]  password : shamal12
+2019-09-23 00:03:35,067 [Thread-3    ] [INFO ] [django.server       ]  "POST /login/ HTTP/1.1" 200 2447
+2019-09-23 00:05:32,474 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:05:33,571 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:05:38,147 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:06:01,645 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:06:02,719 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:06:09,147 [Thread-2    ] [INFO ] [django.server       ]  "GET / HTTP/1.1" 200 1742
+2019-09-23 00:06:16,301 [Thread-4    ] [INFO ] [TrackUser.logger    ]  inside login
+2019-09-23 00:06:16,301 [Thread-4    ] [INFO ] [TrackUser.logger    ]  username : shamal
+2019-09-23 00:06:16,302 [Thread-4    ] [INFO ] [TrackUser.logger    ]  password : shamal12
+2019-09-23 00:06:16,488 [Thread-4    ] [INFO ] [django.server       ]  "POST /login/ HTTP/1.1" 200 2447
+2019-09-23 00:06:26,014 [Thread-6    ] [INFO ] [django.server       ]  "GET /user/ HTTP/1.1" 200 2447
+2019-09-23 00:06:48,594 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:06:49,725 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:06:55,040 [Thread-2    ] [INFO ] [django.server       ]  "GET / HTTP/1.1" 200 1742
+2019-09-23 00:07:00,524 [Thread-4    ] [INFO ] [TrackUser.logger    ]  inside login
+2019-09-23 00:07:00,525 [Thread-4    ] [INFO ] [TrackUser.logger    ]  username : shamal
+2019-09-23 00:07:00,527 [Thread-4    ] [INFO ] [TrackUser.logger    ]  password : shamal12
+2019-09-23 00:07:00,769 [Thread-4    ] [INFO ] [django.server       ]  "POST /login/ HTTP/1.1" 200 2447
+2019-09-23 00:09:21,552 [Thread-6    ] [INFO ] [django.server       ]  "GET / HTTP/1.1" 200 1742
+2019-09-23 00:09:28,236 [Thread-6    ] [INFO ] [TrackUser.logger    ]  inside login
+2019-09-23 00:09:28,236 [Thread-6    ] [INFO ] [TrackUser.logger    ]  username : shamal
+2019-09-23 00:09:28,237 [Thread-6    ] [INFO ] [TrackUser.logger    ]  password : shamal12
+2019-09-23 00:09:28,454 [Thread-6    ] [INFO ] [django.server       ]  "POST /login/ HTTP/1.1" 200 2477
+2019-09-23 00:09:29,849 [Thread-8    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4522
+2019-09-23 00:09:31,038 [Thread-8    ] [INFO ] [django.server       ]  "GET /logout/ HTTP/1.1" 200 1742
+2019-09-23 00:09:37,364 [Thread-8    ] [INFO ] [TrackUser.logger    ]  inside login
+2019-09-23 00:09:37,365 [Thread-8    ] [INFO ] [TrackUser.logger    ]  username : shamalg
+2019-09-23 00:09:37,365 [Thread-8    ] [INFO ] [TrackUser.logger    ]  password : gaikwad12
+2019-09-23 00:09:37,542 [Thread-8    ] [INFO ] [django.server       ]  "POST /login/ HTTP/1.1" 200 2420
+2019-09-23 00:09:39,462 [Thread-8    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4465
+2019-09-23 00:09:40,633 [Thread-10   ] [INFO ] [django.server       ]  "GET /viewuser/ HTTP/1.1" 200 4172
+2019-09-23 00:09:43,999 [Thread-10   ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4465
+2019-09-23 00:09:49,147 [Thread-10   ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4465
+2019-09-23 00:11:35,858 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:11:36,673 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:13:04,006 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:13:10,316 [Thread-2    ] [INFO ] [django.server       ]  "GET / HTTP/1.1" 200 1742
+2019-09-23 00:13:16,984 [Thread-2    ] [INFO ] [TrackUser.logger    ]  inside login
+2019-09-23 00:13:16,985 [Thread-2    ] [INFO ] [TrackUser.logger    ]  username : shamal
+2019-09-23 00:13:16,985 [Thread-2    ] [INFO ] [TrackUser.logger    ]  password : shamal12
+2019-09-23 00:13:17,157 [Thread-2    ] [INFO ] [django.server       ]  "POST /login/ HTTP/1.1" 200 2477
+2019-09-23 00:13:19,378 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4547
+2019-09-23 00:13:26,007 [Thread-4    ] [INFO ] [django.server       ]  "POST /modifyuserdata/ HTTP/1.1" 200 4579
+2019-09-23 00:13:28,989 [Thread-4    ] [INFO ] [django.server       ]  "POST /modifyuserdata/ HTTP/1.1" 200 4579
+2019-09-23 00:14:13,887 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:14:18,085 [Thread-2    ] [ERROR] [django.request      ]  Internal Server Error: /modifyuserdata/
+Traceback (most recent call last):
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'username1'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py", line 84, in modify_user_detail
+    username = request.POST['username1']
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\lib\site-packages\django\utils\datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'username1'
+2019-09-23 00:14:18,089 [Thread-2    ] [ERROR] [django.server       ]  "GET /modifyuserdata/ HTTP/1.1" 500 81646
+2019-09-23 00:14:26,003 [Thread-4    ] [INFO ] [django.server       ]  "GET /user/ HTTP/1.1" 200 2477
+2019-09-23 00:14:26,778 [Thread-4    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4547
+2019-09-23 00:14:40,451 [Thread-6    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4547
+2019-09-23 00:14:41,730 [Thread-6    ] [INFO ] [django.server       ]  "GET /viewuser/ HTTP/1.1" 200 4229
+2019-09-23 00:14:42,348 [Thread-6    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4547
+2019-09-23 00:14:42,789 [Thread-6    ] [INFO ] [django.server       ]  "GET /user/ HTTP/1.1" 200 2477
+2019-09-23 00:14:44,979 [Thread-6    ] [INFO ] [django.server       ]  "GET / HTTP/1.1" 200 1742
+2019-09-23 00:14:50,038 [Thread-8    ] [INFO ] [TrackUser.logger    ]  inside login
+2019-09-23 00:14:50,040 [Thread-8    ] [INFO ] [TrackUser.logger    ]  username : shamal
+2019-09-23 00:14:50,052 [Thread-8    ] [INFO ] [TrackUser.logger    ]  password : shamala12
+2019-09-23 00:14:50,253 [Thread-8    ] [INFO ] [django.server       ]  "POST /login/ HTTP/1.1" 200 1742
+2019-09-23 00:14:56,831 [Thread-8    ] [INFO ] [TrackUser.logger    ]  inside login
+2019-09-23 00:14:56,834 [Thread-8    ] [INFO ] [TrackUser.logger    ]  username : shamal
+2019-09-23 00:14:56,838 [Thread-8    ] [INFO ] [TrackUser.logger    ]  password : shamal12
+2019-09-23 00:14:57,068 [Thread-8    ] [INFO ] [django.server       ]  "POST /login/ HTTP/1.1" 200 2477
+2019-09-23 00:14:58,941 [Thread-8    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4547
+2019-09-23 00:17:19,796 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:17:20,595 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:20:54,663 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:20:55,667 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:20:58,925 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:22:10,047 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:22:15,472 [Thread-2    ] [INFO ] [django.server       ]  "GET / HTTP/1.1" 200 1742
+2019-09-23 00:22:22,324 [Thread-4    ] [INFO ] [TrackUser.logger    ]  inside login
+2019-09-23 00:22:22,325 [Thread-4    ] [INFO ] [TrackUser.logger    ]  username : shamal
+2019-09-23 00:22:22,325 [Thread-4    ] [INFO ] [TrackUser.logger    ]  password : shamal12
+2019-09-23 00:22:22,524 [Thread-4    ] [INFO ] [django.server       ]  "POST /login/ HTTP/1.1" 200 2477
+2019-09-23 00:22:24,352 [Thread-4    ] [INFO ] [django.server       ]  "GET /user/ HTTP/1.1" 200 2477
+2019-09-23 00:22:25,048 [Thread-4    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4566
+2019-09-23 00:22:44,530 [Thread-6    ] [INFO ] [django.server       ]  "GET /user/ HTTP/1.1" 200 2477
+2019-09-23 00:22:45,493 [Thread-6    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4566
+2019-09-23 00:22:46,457 [Thread-6    ] [INFO ] [django.server       ]  "GET /deleteuser/ HTTP/1.1" 200 4510
+2019-09-23 00:22:50,067 [Thread-7    ] [ERROR] [django.request      ]  Internal Server Error: /deleteuserdata/
+Traceback (most recent call last):
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py", line 133, in delete_user_data
+    if username!=current_user:
+NameError: name 'current_user' is not defined
+2019-09-23 00:22:50,068 [Thread-7    ] [ERROR] [django.server       ]  "POST /deleteuserdata/ HTTP/1.1" 500 75930
+2019-09-23 00:23:19,757 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:23:20,857 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:23:25,929 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4566
+2019-09-23 00:23:26,701 [Thread-2    ] [INFO ] [django.server       ]  "GET /deleteuser/ HTTP/1.1" 200 4510
+2019-09-23 00:23:32,331 [Thread-4    ] [ERROR] [django.request      ]  Internal Server Error: /deleteuserdata/
+Traceback (most recent call last):
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py", line 134, in delete_user_data
+    if username!=current_user:
+NameError: name 'current_user' is not defined
+2019-09-23 00:23:32,336 [Thread-4    ] [ERROR] [django.server       ]  "POST /deleteuserdata/ HTTP/1.1" 500 75930
+2019-09-23 00:24:03,854 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:24:04,855 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:24:23,228 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4566
+2019-09-23 00:24:57,089 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:24:59,983 [Thread-2    ] [INFO ] [django.server       ]  "GET /user/ HTTP/1.1" 200 2477
+2019-09-23 00:25:00,595 [Thread-4    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4570
+2019-09-23 00:26:41,528 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:26:42,559 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:26:59,277 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:27:01,066 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4596
+2019-09-23 00:28:08,008 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:28:08,779 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:28:12,057 [Thread-2    ] [INFO ] [django.server       ]  "GET /user/ HTTP/1.1" 200 2477
+2019-09-23 00:28:12,778 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4596
+2019-09-23 00:28:52,158 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:28:53,177 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:29:04,933 [Thread-2    ] [INFO ] [django.server       ]  "GET /user/ HTTP/1.1" 200 2477
+2019-09-23 00:29:05,630 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4572
+2019-09-23 00:31:25,432 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:31:26,525 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:31:28,853 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:31:32,079 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4566
+2019-09-23 00:32:49,568 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:32:50,565 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:32:55,700 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:32:59,456 [Thread-2    ] [ERROR] [django.request      ]  Internal Server Error: /modifyuser/
+Traceback (most recent call last):
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py", line 81, in modify_user
+    Users['current_user']=json.dumps(current_user)
+NameError: name 'json' is not defined
+2019-09-23 00:32:59,461 [Thread-2    ] [ERROR] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 500 74215
+2019-09-23 00:33:15,156 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:33:16,273 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:33:24,053 [Thread-4    ] [ERROR] [django.request      ]  Internal Server Error: /modifyuser/
+Traceback (most recent call last):
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py", line 82, in modify_user
+    Users['current_user']=json.dumps(current_user)
+  File "c:\users\mahes\appdata\local\programs\python\python37\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "c:\users\mahes\appdata\local\programs\python\python37\Lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\users\mahes\appdata\local\programs\python\python37\Lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "c:\users\mahes\appdata\local\programs\python\python37\Lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type User is not JSON serializable
+2019-09-23 00:33:24,056 [Thread-4    ] [ERROR] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 500 92379
+2019-09-23 00:35:37,119 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:35:38,247 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:35:41,507 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:35:46,741 [Thread-2    ] [INFO ] [django.server       ]  "GET / HTTP/1.1" 200 1742
+2019-09-23 00:35:52,933 [Thread-4    ] [INFO ] [TrackUser.logger    ]  inside login
+2019-09-23 00:35:52,934 [Thread-4    ] [INFO ] [TrackUser.logger    ]  username : shamal
+2019-09-23 00:35:52,942 [Thread-4    ] [INFO ] [TrackUser.logger    ]  password : shamal12
+2019-09-23 00:35:53,198 [Thread-4    ] [INFO ] [django.server       ]  "POST /login/ HTTP/1.1" 200 2477
+2019-09-23 00:35:55,642 [Thread-4    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4608
+2019-09-23 00:36:46,776 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:36:47,828 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:36:58,603 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:36:59,506 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:37:00,799 [Thread-2    ] [INFO ] [django.server       ]  "GET /user/ HTTP/1.1" 200 2477
+2019-09-23 00:37:01,549 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4608
+2019-09-23 00:37:08,601 [Thread-2    ] [INFO ] [django.server       ]  "GET /deleteuser/ HTTP/1.1" 200 4510
+2019-09-23 00:37:18,069 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:37:19,967 [Thread-2    ] [INFO ] [django.server       ]  "GET /user/ HTTP/1.1" 200 2477
+2019-09-23 00:37:21,167 [Thread-3    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4608
+2019-09-23 00:37:44,399 [Thread-6    ] [INFO ] [django.server       ]  "GET /deleteuser/ HTTP/1.1" 200 4510
+2019-09-23 00:37:49,291 [Thread-6    ] [INFO ] [django.server       ]  "POST /deleteuserdata/ HTTP/1.1" 200 4452
+2019-09-23 00:38:30,497 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:38:31,690 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:38:33,591 [Thread-2    ] [INFO ] [django.server       ]  "GET /deleteuser/ HTTP/1.1" 200 4421
+2019-09-23 00:38:34,706 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4519
+2019-09-23 00:38:37,437 [Thread-2    ] [INFO ] [django.server       ]  "GET /deleteuser/ HTTP/1.1" 200 4421
+2019-09-23 00:38:38,356 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4519
+2019-09-23 00:38:41,037 [Thread-4    ] [INFO ] [django.server       ]  "GET /deleteuser/ HTTP/1.1" 200 4421
+2019-09-23 00:38:45,382 [Thread-4    ] [INFO ] [django.server       ]  "POST /deleteuserdata/ HTTP/1.1" 200 4365
+2019-09-23 00:38:48,845 [Thread-4    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4432
+2019-09-23 00:38:54,227 [Thread-6    ] [INFO ] [django.server       ]  "GET /user/ HTTP/1.1" 200 2477
+2019-09-23 00:39:02,864 [Thread-8    ] [INFO ] [django.server       ]  "POST /registeruser/ HTTP/1.1" 200 2506
+2019-09-23 00:39:06,912 [Thread-8    ] [INFO ] [django.server       ]  "GET /deleteuser/ HTTP/1.1" 200 4421
+2019-09-23 00:39:09,212 [Thread-8    ] [INFO ] [django.server       ]  "GET /user/ HTTP/1.1" 200 2477
+2019-09-23 00:39:19,268 [Thread-10   ] [INFO ] [django.server       ]  "POST /registeruser/ HTTP/1.1" 200 2506
+2019-09-23 00:39:20,465 [Thread-12   ] [INFO ] [django.server       ]  "GET /deleteuser/ HTTP/1.1" 200 4512
+2019-09-23 00:39:27,762 [Thread-12   ] [INFO ] [django.server       ]  "POST /deleteuserdata/ HTTP/1.1" 200 4452
+2019-09-23 00:39:45,845 [Thread-14   ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4519
+2019-09-23 00:41:01,844 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:41:02,875 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:41:22,032 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:41:25,555 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4519
+2019-09-23 00:41:26,503 [Thread-2    ] [INFO ] [django.server       ]  "GET /user/ HTTP/1.1" 200 2477
+2019-09-23 00:41:27,464 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4519
+2019-09-23 00:41:28,312 [Thread-2    ] [INFO ] [django.server       ]  "GET /deleteuser/ HTTP/1.1" 200 4421
+2019-09-23 00:41:29,769 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4519
+2019-09-23 00:42:03,731 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:42:04,895 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:42:05,463 [Thread-2    ] [INFO ] [django.server       ]  "GET /user/ HTTP/1.1" 200 2477
+2019-09-23 00:42:06,296 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4519
+2019-09-23 00:42:11,283 [Thread-4    ] [INFO ] [django.server       ]  "GET /deleteuser/ HTTP/1.1" 200 4421
+2019-09-23 00:42:16,215 [Thread-4    ] [INFO ] [django.server       ]  "POST /deleteuserdata/ HTTP/1.1" 200 4365
+2019-09-23 00:42:40,022 [Thread-6    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4432
+2019-09-23 00:43:34,007 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:43:35,222 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:43:36,380 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4432
+2019-09-23 00:43:38,186 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4432
+2019-09-23 00:45:09,297 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:45:10,278 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:45:14,223 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4434
+2019-09-23 00:45:15,410 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4434
+2019-09-23 00:45:15,890 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4434
+2019-09-23 00:45:16,299 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4434
+2019-09-23 00:46:09,731 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:46:11,071 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:46:13,514 [Thread-1    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4434
+2019-09-23 00:47:51,027 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:47:52,112 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:47:59,216 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4408
+2019-09-23 00:48:32,172 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:48:32,969 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:48:48,215 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:48:50,219 [Thread-2    ] [INFO ] [django.server       ]  "GET /user/ HTTP/1.1" 200 2477
+2019-09-23 00:48:51,180 [Thread-4    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4390
+2019-09-23 00:49:09,472 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:49:10,453 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:49:14,099 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4408
+2019-09-23 00:51:12,886 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:51:13,955 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:51:16,956 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:51:19,343 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4406
+2019-09-23 00:51:38,573 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:51:39,592 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:51:50,368 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:51:51,500 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:52:04,584 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4406
+2019-09-23 00:52:05,649 [Thread-2    ] [INFO ] [django.server       ]  "GET /deleteuser/ HTTP/1.1" 200 4334
+2019-09-23 00:52:07,040 [Thread-2    ] [INFO ] [django.server       ]  "GET /user/ HTTP/1.1" 200 2477
+2019-09-23 00:52:12,871 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:52:15,873 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4406
+2019-09-23 00:52:17,134 [Thread-2    ] [INFO ] [django.server       ]  "GET /deleteuser/ HTTP/1.1" 200 4334
+2019-09-23 00:52:17,701 [Thread-2    ] [INFO ] [django.server       ]  "GET /user/ HTTP/1.1" 200 2477
+2019-09-23 00:52:25,285 [Thread-4    ] [INFO ] [django.server       ]  "POST /registeruser/ HTTP/1.1" 200 2506
+2019-09-23 00:52:34,542 [Thread-6    ] [INFO ] [django.server       ]  "POST /registeruser/ HTTP/1.1" 200 2505
+2019-09-23 00:52:43,130 [Thread-8    ] [INFO ] [django.server       ]  "POST /registeruser/ HTTP/1.1" 200 2506
+2019-09-23 00:52:44,863 [Thread-8    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4582
+2019-09-23 00:52:50,516 [Thread-9    ] [INFO ] [django.server       ]  "GET /deleteuser/ HTTP/1.1" 200 4510
+2019-09-23 00:53:12,674 [MainThread  ] [INFO ] [django.utils.autorel]  C:\Users\mahes\Desktop\xpanxion\djenv\TrackUser\TrackUserApp\views.py changed, reloading.
+2019-09-23 00:53:13,796 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:53:16,583 [Thread-2    ] [INFO ] [django.server       ]  "GET /deleteuser/ HTTP/1.1" 200 4510
+2019-09-23 00:53:20,241 [Thread-2    ] [INFO ] [django.server       ]  "POST /deleteuserdata/ HTTP/1.1" 200 4558
+2019-09-23 00:53:24,710 [Thread-4    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4582
+2019-09-23 00:57:50,723 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:57:58,754 [Thread-2    ] [INFO ] [django.server       ]  "GET /user/ HTTP/1.1" 200 2477
+2019-09-23 00:57:59,419 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4824
+2019-09-23 00:58:31,900 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 00:58:35,090 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4827
+2019-09-23 00:58:35,914 [Thread-2    ] [INFO ] [django.server       ]  "GET /user/ HTTP/1.1" 200 2477
+2019-09-23 00:58:36,775 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4827
+2019-09-23 00:59:17,373 [Thread-4    ] [INFO ] [django.server       ]  "GET /user/ HTTP/1.1" 200 2477
+2019-09-23 00:59:25,591 [Thread-6    ] [INFO ] [django.server       ]  "POST /registeruser/ HTTP/1.1" 200 2506
+2019-09-23 00:59:26,725 [Thread-6    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4911
+2019-09-23 00:59:48,929 [Thread-8    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4911
+2019-09-23 01:02:14,502 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 01:02:16,703 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 4917
+2019-09-23 01:03:21,680 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 01:03:25,867 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 5077
+2019-09-23 01:04:29,266 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 01:04:32,780 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 5134
+2019-09-23 01:06:10,355 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 01:06:12,922 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 5124
+2019-09-23 01:06:24,791 [Thread-4    ] [INFO ] [django.server       ]  "GET /logout/ HTTP/1.1" 200 1742
+2019-09-23 01:10:30,309 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 01:10:54,429 [Thread-2    ] [INFO ] [django.server       ]  "GET / HTTP/1.1" 200 1952
+2019-09-23 01:11:13,200 [Thread-4    ] [INFO ] [TrackUser.logger    ]  inside login
+2019-09-23 01:11:13,203 [Thread-4    ] [INFO ] [TrackUser.logger    ]  username : shamal
+2019-09-23 01:11:13,204 [Thread-4    ] [INFO ] [TrackUser.logger    ]  password : shamal12
+2019-09-23 01:11:13,465 [Thread-4    ] [INFO ] [django.server       ]  "POST /login/ HTTP/1.1" 200 2541
+2019-09-23 01:11:16,143 [Thread-4    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 5552
+2019-09-23 01:11:17,353 [Thread-4    ] [INFO ] [django.server       ]  "GET /user/ HTTP/1.1" 200 2541
+2019-09-23 01:11:18,648 [Thread-4    ] [INFO ] [django.server       ]  "GET /viewuser/ HTTP/1.1" 200 4571
+2019-09-23 01:11:19,665 [Thread-4    ] [INFO ] [django.server       ]  "GET /deleteuser/ HTTP/1.1" 200 4893
+2019-09-23 01:11:20,355 [Thread-4    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 5552
+2019-09-23 01:11:35,839 [Thread-6    ] [INFO ] [django.server       ]  "GET /user/ HTTP/1.1" 200 2541
+2019-09-23 01:11:36,873 [Thread-6    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 5552
+2019-09-23 01:11:49,811 [Thread-8    ] [INFO ] [django.server       ]  "GET /deleteuser/ HTTP/1.1" 200 4893
+2019-09-23 01:13:52,009 [MainThread  ] [INFO ] [django.utils.autorel]  Watching for file changes with StatReloader
+2019-09-23 01:13:54,562 [Thread-2    ] [INFO ] [django.server       ]  "GET /user/ HTTP/1.1" 200 2541
+2019-09-23 01:13:55,535 [Thread-2    ] [INFO ] [django.server       ]  "GET /modifyuser/ HTTP/1.1" 200 5690
+2019-09-23 01:13:56,791 [Thread-2    ] [INFO ] [django.server       ]  "GET /deleteuser/ HTTP/1.1" 200 5084
+2019-09-23 01:13:58,001 [Thread-2    ] [INFO ] [django.server       ]  "GET /viewuser/ HTTP/1.1" 200 4762
+2019-09-23 01:13:59,846 [Thread-2    ] [INFO ] [django.server       ]  "GET /deleteuser/ HTTP/1.1" 200 5084
+2019-09-23 01:14:02,786 [Thread-4    ] [INFO ] [django.server       ]  "GET /logout/ HTTP/1.1" 200 1952

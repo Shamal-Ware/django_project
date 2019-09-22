@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Tracker App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <div style="display: block;" id="tblmain" align="center">
+        <table width="100%" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td style="background:white" height="5"></td>
+                </tr>
+            </tbody>
+        </table>
+        <table width="980" cellspacing="0" style=" border-collapse: collapse;border: 3px solid #1E90FF;">
+            <tbody>
+                <tr>
+                    <td class="topnavon" rowspan="2" width="170" align="center">
+                        <h3>User Tracker Application</h3></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="container-fluid" style="margin-left: 500px;">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/user">Add User</a></li>
+                <li><a href="/modifyuser">Modify User</a></li>
+                {% if request.user.is_superuser %}
+                <li><a href="/deleteuser">Delete User</a></li>
+                {% else %} {% endif %}
+                <li><a href="/viewuser">View User</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container" style="width:500px;">
+        {% block content %} {% endblock %}
+    </div>
+
+</body>
+
+</html>
