@@ -11,7 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style type="text/css">
         .login-form {
-            width: 340px;
+            width: 400px;
             margin: 50px auto;
         }
 
@@ -40,7 +40,9 @@
 </head>
 
 <body>
-    <div class="login-form">
+<h3 align="center">User Tracker Application</h3></td>
+    <div class="login-form" >
+        <p style="color:green; font-weight:bold;">{{msg}}</p>
         <form action="/login/" method="post">
             {% csrf_token %}
             <h2 class="text-center">Log in</h2>

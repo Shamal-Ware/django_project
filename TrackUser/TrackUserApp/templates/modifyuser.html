@@ -53,7 +53,10 @@
                     document.getElementById("mobile").value = data[i]['mobile']
                 }
             }
-            if (user == data1['cur_user']) {
+            if (data1['cur_user']=="super_user"){
+            document.getElementById("modifyuse").disabled = false;
+            }
+            else if (user == data1['cur_user']) {
                 document.getElementById("modifyuse").disabled = false;
             } else {
                 document.getElementById("modifyuse").disabled = true;
@@ -77,7 +80,10 @@
                     document.getElementById("mobile").value = data[i]['mobile']
                 }
             }
-            if (user == data1['cur_user']) {
+            if (data1['cur_user']=="super_user"){
+            document.getElementById("modifyuse").disabled = false;
+            }
+            else if (user == data1['cur_user']) {
                 document.getElementById("modifyuse").disabled = false;
             } else {
                 document.getElementById("modifyuse").disabled = true;

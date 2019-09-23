@@ -7,7 +7,7 @@
 {% block content %}
 <h4>This is user registration page. Please enter the details below:</h4>
 <p style="color:green; font-weight:bold;">{{msg}}</p>
-<form action="/registeruser/" method="post">
+<form action="/adduser/" method="post">
     {% csrf_token %} username:
     <input type="text" id="username" class="form-control" name="username">
     <br> password:
