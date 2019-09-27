@@ -9,14 +9,10 @@
     {% block content %}
     <h3>This is user data view page.</h3>
     <p style="color:green; font-weight:bold;">{{msg}}</p>
+    username:
+    <br>
     <select id="userlist" onclick="display_user_details()" size="5" style=" width: 250px;" selected>
     </select>
-    <br> username:
-    <input type="text" id="username" class="form-control" name="username" readonly>
-    <br> password:
-    <input type="password" id="password" class="form-control" name="password">
-    <br> confirm_password:
-    <input type="password" id="confirmpassword" class="form-control" name="confirmpassword">
     <br> email_address:
     <input type="text" id="email" class="form-control" name="email">
     <br> phonenumber
@@ -40,9 +36,7 @@
             var user = document.getElementById("userlist").value;
             for (i = 0; i < data.length; i++) {
                 if (user === data[i]['uname']) {
-                    document.getElementById("username").value = data[i]['uname']
-                    document.getElementById("password").value = data[i]['passw']
-                    document.getElementById("confirmpassword").value = data[i]['passw']
+
                     document.getElementById("email").value = data[i]['email']
                     document.getElementById("mobile").value = data[i]['mobile']
                 }
@@ -59,9 +53,7 @@
             var user = document.getElementById("userlist").value;
             for (i = 0; i < data.length; i++) {
                 if (user === data[i]['uname']) {
-                    document.getElementById("username").value = data[i]['uname']
-                    document.getElementById("password").value = data[i]['passw']
-                    document.getElementById("confirmpassword").value = data[i]['passw']
+
                     document.getElementById("email").value = data[i]['email']
                     document.getElementById("mobile").value = data[i]['mobile']
                 }

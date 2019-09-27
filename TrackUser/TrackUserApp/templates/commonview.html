@@ -29,7 +29,9 @@
         </table>
         <div class="container-fluid" style="margin-left: 500px;">
             <ul class="nav navbar-nav">
+                 {% if request.user.is_superuser %}
                 <li class="active"><a href="/adduser">Add User</a></li>
+                {% else %} {% endif %}
                 <li><a href="/modifyuser">Modify User</a></li>
                 {% if request.user.is_superuser %}
                 <li><a href="/deleteuser">Delete User</a></li>

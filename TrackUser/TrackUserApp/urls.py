@@ -13,7 +13,10 @@ urlpatterns = [
     url(r'viewuser/', view_user),
     url(r'deleteuserdata/', delete_user_data),
     url(r'modifyuserdata/',modify_user_detail),
-    url(r'users/',user_detail_list.as_view()), # phase 2 implementation
+    url(r'^users/',user_detail_list.as_view()), # phase 2 implementation
+    url(r'^logs/$',loglist.as_view()), # phase 2 implementation
+    url(r'^logs/user/$',user_log_entry.as_view()), # phase 2 implementation
+    url(r'^logs/replay$',log_entry.as_view()), # phase 2 implementation,
 ]
 
 

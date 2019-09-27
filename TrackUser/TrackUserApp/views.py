@@ -14,7 +14,9 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from .serializer import *
-
+import os
+import json
+from TrackUser.settings import BASE_DIR
 
 # Create your views here.
 # function used to login the user
@@ -35,7 +37,15 @@ def login_user(request):
                     if user.is_active:
                         login(request, user)
                         log.info("User has logged in : %s",username )
-                        return render(request, 'user_registration.html')
+                        superusers = User.objects.filter(is_superuser=True)
+                        for uname in superusers:
+                            log.info("super user name : %s", uname.username)
+                            if username==uname.username:
+                                log.info("super user has been logged in : %s", username)
+                                return render(request, 'user_registration.html')
+                            else:
+                                log.info("End user has been logged in : %s", username)
+                                return redirect('/modifyuser/')
                 else:
                     message = {'msg': "user is not having login permission"}
                     log.info("User is not having login permissions : %s", username)
@@ -59,53 +69,60 @@ def login_user(request):
 @login_required( login_url='/login/')
 def register_user(request):
     try:
+        registered = False
         if request.POST:
             log.info("Inside save user details")
             username = request.POST['username']
             log.info("username : %s", username)
             password = request.POST['password']
             log.info("password : %s", password)
-            confirm_password = request.POST['confirmpassword']
-            log.info("confirm_password : %s", confirm_password)
             email = request.POST['email']
             log.info("email : %s", email)
-            mobile = request.POST['mobile']
+            mobile = request.POST['phonenumber']
             log.info("mobile : %s", mobile)
-            if username != "" and password != "" and confirm_password != "" and email != "" and mobile != "":
+            if username != "" and password != "" and  email != "" and mobile != "":
                 user_data = user_detail.objects.all()
                 log.info("user_data : %s", user_data)
                 for data in user_data:
-                    if data.username == username:
+                    if data == username:
                         log.info("A user with that username already exists. : %s", username)
 
                         return render(request, 'user_registration.html',
                                       {'msg': "A user with that username already exists."})
                     else:
                         continue
-                if password == confirm_password:
-                    regex = '^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'
-                    if re.search(regex, email):
-                        pattern = re.compile("(0/91)?[6-9][0-9]{9}")
-                        if pattern.match(mobile):
-                            user = authenticate(request, username=username, password=password)
-                            user = user_detail(username=username, password=password, email_address=email,
-                                            phonenumber=mobile)
-                            if user is not None:
-                                user.is_staff = True
-                                user.save()
+                regex = '^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'
+                if re.search(regex, email):
+                    pattern = re.compile("(0/91)?[6-9][0-9]{9}")
+                    if pattern.match(mobile):
+                        user_form = UserForm(data=request.POST)
+                        log.info("user registration data : %s",request.POST)
+                        profile_form = UserProfileInfoForm(data=request.POST)
+                        if user_form.is_valid() and profile_form.is_valid():
+                            user = user_form.save()
+                            user.set_password(user.password)
+                            user.save()
+                            profile = profile_form.save(commit=False)
+                            profile.user = user
+                            profile.save()
+                            registered = True
                             log.info("user registered successfully.")
-                            return render(request, 'user_registration.html', {'msg': "user registered successfully."})
-                        else:
-                            log.info("Please enter valid mobile number.")
                             return render(request, 'user_registration.html',
-                                          {'msg': "Please enter valid mobile number."})
+                                          {'msg': "user registered successfully."})
+                        else:
+                            if user_form.errors!="":
+                                errordata=user_form.errors['username']
+                                log.error("error while registering user : %s",errordata)
+                                message = {'msg': errordata}
+                            log.info("user is not registered.")
+                            return render(request, 'user_registration.html',message)
                     else:
-                        log.info("Please enter valid email id.")
-                        return render(request, 'user_registration.html', {'msg': "Please enter valid email id."})
+                        log.info("Please enter valid mobile number.")
+                        return render(request, 'user_registration.html',
+                                      {'msg': "Please enter valid mobile number."})
                 else:
-                    log.info("password and confirm password is not matching.")
-                    return render(request, 'user_registration.html',
-                                  {'msg': "password and confirm password is not matching."})
+                    log.info("Please enter valid email id.")
+                    return render(request, 'user_registration.html', {'msg': "Please enter valid email id."})
             else:
                 log.info("Please enter all the details.")
                 return render(request, 'user_registration.html', {'msg': "Please enter all the details"})
@@ -123,9 +140,9 @@ def get_user_details(request):
         all_user_data = []
         for data in user_data:
             user = {}
-            user['uname'] = data.username
-            user['passw'] = data.password
-            user['email'] = data.email_address
+            user['uname'] = data.user.username
+            user['passw'] = data.user.password
+            user['email'] = data.user.email
             user['mobile'] = data.phonenumber
             all_user_data.append(user)
         Users['userdata'] = all_user_data
@@ -160,7 +177,7 @@ def modify_user(request):
 @login_required( login_url='/login/')
 def modify_user_detail(request):
     try:
-        username = request.POST['username1']
+        username = request.POST['username']
         log.info("modify data username : %s", username)
         Users = get_user_details(request)
         current_user = {}
@@ -177,28 +194,26 @@ def modify_user_detail(request):
         Users['current_user'] = current_user
         if username != "No user registered":
             password = request.POST['password']
-            confirm_password = request.POST['confirmpassword']
             email = request.POST['email']
-            mobile = request.POST['mobile']
-            print("request.POST", request.POST)
-            if username != "" and password != "" and confirm_password != "" and email != "" and mobile != "":
-                if password == confirm_password:
-                    user = user_detail.objects.get(username=username)
-                    user.username = username
-                    user.password = password
-                    user.email_address = email
-                    user.phonenumber = mobile
-                    user.save()
-                    Users = get_user_details(request)
-                    Users['current_user'] = current_user
-                    log.info("Users data after modification : %s", Users)
-                    log.info("user data modified successfully.")
-                    Users['msg'] = "user data modified successfully."
-                    return render(request, 'modifyuser.html', Users)
-                else:
-                    log.info("password and confirm password is not matching.")
-                    Users['msg'] = "password and confirm password is not matching."
-                    return render(request, 'modifyuser.html', Users)
+            mobile = request.POST['phonenumber']
+            log.info("user data to modify : %s", request.POST)
+            if username != "" and email != "" and mobile != "":
+                userdata = user_detail.objects.get(user__username=username)
+                users = User.objects.get(username=username)
+                if password != "":
+                    users.password = password
+                users.email = email
+                userdata.phonenumber = mobile
+                userdata.save()
+                users.save()
+                Users = get_user_details(request)
+                log.info("user data after modification : %s",Users)
+                Users['current_user'] = current_user
+                log.info("Users data after modification : %s", Users)
+                log.info("user data modified successfully.")
+                Users['msg'] = "user data modified successfully."
+                return render(request, 'modifyuser.html', Users)
+
             else:
                 log.info("Please enter all the details")
                 Users['msg'] = "Please enter all the details"
@@ -223,7 +238,7 @@ def delete_user(request):
 @login_required( login_url='/login/')
 def delete_user_data(request):
     try:
-        username = request.POST['username1']
+        username = request.POST['username']
         Users = get_user_details(request)
         current_user = {}
         active_user = request.user.username
@@ -234,8 +249,10 @@ def delete_user_data(request):
         log.info("username to be deleted : %s", username)
         if username != "No user registered":
             if username != active_user:
-                user = user_detail.objects.get(username=username)
-                user.delete()
+                userdata = user_detail.objects.get(user__username=username)
+                users=User.objects.get(username=username)
+                users.delete()
+                userdata.delete()
                 Users = get_user_details(request)
                 log.info("user data deleted successfully.")
                 Users['msg'] = "user data deleted successfully."
@@ -275,22 +292,180 @@ def logout_user(request):
 
 # Phase 2 implementation
 class user_detail_list(APIView):
+    # This function  return all the user records as well as particular user recode by user id
     def get(self,request):
-        userid= self.request.query_params.get('id')
-        print("userid", userid)
-        if userid == None:
-            user_details = user_detail.objects.all()
-            print("user_details", user_details)
-        else:
-            user_details = user_detail.objects.filter(id=userid)
-            print("user_details",user_details)
-        serializer= user_detailSerializer(user_details,many=True)
-        return Response(serializer.data)
+        try:
+            userid = self.request.query_params.get('id')
+            log.info("userid : %s", userid)
+            if userid == None:
+                user_details = user_detail.objects.all()
+                log.info("user_details : %s", user_details)
+                serializer = user_detailSerializer(user_details, many=True)
+            else:
+                user_details = user_detail.objects.get(id=userid)
+                log.info("user_details : %s", user_details)
+                serializer = user_detailSerializer(user_details)
+            return Response(serializer.data)
+        except Exception as err:
+            log.error("ERROR : %s ",err)
+            log.error("Error while getting user details. User does not exist with the current user id.")
+            data = {'message': 'User does not exist with the current id.'}
+            return Response(data, status=status.HTTP_404_NOT_FOUND)
 
     def post(self,request):
-        serializer=user_detailSerializer(data=request.data)
-        print("request.data",request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        try:
+            serializer  = user_detailSerializer(data=request.data)
+            log.info("create user data :%s", request.data)
+            user_details = {}
+            user_details['username'] = request.data['username']
+            user_details['password'] = request.data['password']
+            user_details['email'] = request.data['email']
+            if serializer.is_valid(raise_exception=True):
+                serializer.save(user=user_details)
+                serializer.save(phonenumber=request.data['phonenumber'])
+                log.info("User has been registered into system")
+                return Response(serializer.data, status=status.HTTP_201_CREATED)
+            else:
+                log.debug("Entered user input is not in correct format")
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except Exception as err:
+            log.error("ERROR : %s", err)
+            log.error("error while creating new user using REST : %s",err.args[0])
+            log.error("Unable to register the user in system.")
+            data = {'message': str(err.args[0])}
+            return Response(data, status=status.HTTP_404_NOT_FOUND)
+
+
+    def patch(self,request):
+        try:
+            userid = self.request.query_params.get('id')
+            log.info("userid to update data : %s", userid)
+            if userid == None:
+                log.debug("Please provide user id in url to update the record.")
+                data = {'message': 'Please provide user id in url to update the record.'}
+                return Response(data, status=status.HTTP_400_BAD_REQUEST)
+            else:
+                user_data = user_detail.objects.get(id=userid)
+                log.info("user_details : %s", user_data)
+                log.info("create user data :%s", request.data)
+                user_details = {}
+                if 'username' in request.data.keys():
+                    user_details['username'] = request.data['username']
+                if'password'  in request.data.keys():
+                    user_details['password'] = request.data['password']
+                if 'email' in request.data.keys():
+                    user_details['email'] = request.data['email']
+                    log.info("user_details to modify user data: %s",user_details)
+                serializer = user_detailSerializer(user_data, data=request.data,
+                                                   partial=True)  # set partial=True to update a data partially
+                if serializer.is_valid():
+                    if len(user_details)>0:
+                        serializer.save(user=user_details)
+                    if 'phonenumber' in request.data.keys():
+                        serializer.save(phonenumber=request.data['phonenumber'])
+                    log.info("User details has been modified for user : %s" ,userid)
+                    return Response(serializer.data, status=status.HTTP_201_CREATED, )
+                log.debug("Entered user input is not in correct format")
+                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except Exception as err:
+            log.error("ERROR : %s", err)
+            log.error("Error while performing partial update of data using REST : %s",err.args[0])
+            log.error("User does not exist with the current id.")
+            data = {'message': str(err.args[0])}
+            return Response(data, status=status.HTTP_404_NOT_FOUND)
+
+    def delete(self,request):
+        try:
+            userid = self.request.query_params.get('id')
+            log.info("userid to delete the record : %s", userid)
+            if userid == None:
+                log.debug("Please provide user id in url to delete the record.")
+                data = {'message': 'Please provide user id in url to delete the record.'}
+                return Response(data, status=status.HTTP_400_BAD_REQUEST)
+            else:
+                user_data = user_detail.objects.get(id=userid)
+                users = User.objects.get(username=user_data.user.username)
+                users.delete()
+                log.info("user_details : %s", user_data)
+                user_data.delete()
+                log.info("User has been deleted from the system.")
+                data = {'message': 'User has been deleted from the system.'}
+                return Response(data,status=status.HTTP_200_OK)
+        except Exception as err:
+            log.error("ERROR : %s",err)
+            log.error("User does not exist with the current id.")
+            data={'message':'User does not exist with the current id.'}
+            return Response(data, status=status.HTTP_404_NOT_FOUND)
+
+# Phase 2 implementation
+class loglist(APIView):
+    def get(self,request):
+        try:
+            data={}
+            log_entry_list=[]
+            log.info("Getting all log entries")
+            with open(os.path.join(BASE_DIR, 'djangoproject.log')) as logfile:
+                for line in logfile:
+                    log_entry_list.append(line.strip())
+            data['logdata']=log_entry_list
+            return Response(data, status=status.HTTP_200_OK)
+        except Exception as err:
+            log.error("ERROR : %s ", err)
+
+# Phase 2 implementation
+class user_log_entry(APIView):
+    def get(self,request):
+        try:
+            data = {}
+            log_entry_list = []
+            log.info("Getting particular user log entries")
+            userid = self.request.query_params.get('id')
+            log.info("userid to get logs for user : %s", userid)
+            if userid == None:
+                log.debug("Please provide user id in url to get the logs.")
+                data = {'message': 'Please provide user id in url to get the logs.'}
+                return Response(data, status=status.HTTP_400_BAD_REQUEST)
+            else:
+                user_data = user_detail.objects.get(id=userid)
+                username=user_data.user.username
+                log.info("user name for getting logs : %s",username )
+                with open(os.path.join(BASE_DIR, 'djangoproject.log')) as logfile:
+                    for line in logfile:
+                        if username in line:
+                            log_entry_list.append(line.strip())
+                if len(log_entry_list)==0:
+                    log.info("There is no data present in log file")
+                    data={'message' : "There is no data present in log file"}
+                else:
+                    data['logdata'] = log_entry_list
+                    log.info("Log entries has been displayed to user.")
+                return Response(data, status=status.HTTP_200_OK)
+        except Exception as err:
+            log.error("ERROR : %s ",err)
+            log.error("User does not exist with the current id to get log entries.")
+            data = {'message': 'User does not exist with the current id.'}
+            return Response(data, status=status.HTTP_404_NOT_FOUND)
+
+# Phase 2 implementation
+class log_entry(APIView):
+    def post(self,request):
+        try:
+            log_entry_list = []
+            logdata = request.data
+            log.info("log data to store into logfile : %s", logdata)
+            with open(os.path.join(BASE_DIR, 'djangoproject.log')) as logfile:
+                for line in logfile:
+                    log_entry_list.append(line.strip())
+            log_entry_list.extend(logdata['logs'])
+            with open(os.path.join(BASE_DIR, 'djangoproject.log'), 'w') as logfile:
+                for data in log_entry_list:
+                    logfile.write(data)
+                    logfile.write("\n")
+            data = {'message': 'Data has been written into log file.'}
+            log.info("Data has been written into log file.")
+            return Response(data, status=status.HTTP_200_OK)
+        except Exception as err:
+            log.error("ERROR : %s", err)
+            log.error("Input data format is not correct. Unable to post data into log file.")
+            data = {'message': 'Input data format is not correct. Unable to post data into log file.'}
+            return Response(data, status=status.HTTP_400_BAD_REQUEST)
