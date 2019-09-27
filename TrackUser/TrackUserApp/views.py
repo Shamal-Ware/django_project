@@ -199,7 +199,7 @@ def modify_user_detail(request):
             log.info("user data to modify : %s", request.POST)
             if username != "" and email != "" and mobile != "":
                 userdata = user_detail.objects.get(user__username=username)
-                users = User.objects.get(username=username)
+                users = userdata.user
                 if password != "":
                     users.password = password
                 users.email = email
@@ -250,7 +250,7 @@ def delete_user_data(request):
         if username != "No user registered":
             if username != active_user:
                 userdata = user_detail.objects.get(user__username=username)
-                users=User.objects.get(username=username)
+                users=userdata.user
                 users.delete()
                 userdata.delete()
                 Users = get_user_details(request)
@@ -384,7 +384,7 @@ class user_detail_list(APIView):
                 return Response(data, status=status.HTTP_400_BAD_REQUEST)
             else:
                 user_data = user_detail.objects.get(id=userid)
-                users = User.objects.get(username=user_data.user.username)
+                users = user_data.user
                 users.delete()
                 log.info("user_details : %s", user_data)
                 user_data.delete()

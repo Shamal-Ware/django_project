@@ -16,7 +16,7 @@ urlpatterns = [
     url(r'^users/',user_detail_list.as_view()), # phase 2 implementation
     url(r'^logs/$',loglist.as_view()), # phase 2 implementation
     url(r'^logs/user/$',user_log_entry.as_view()), # phase 2 implementation
-    url(r'^logs/replay$',log_entry.as_view()), # phase 2 implementation,
+    url(r'^logs/replay/$',log_entry.as_view()), # phase 2 implementation,
 ]
 
 

@@ -44,7 +44,7 @@ class user_detailSerializer(serializers.ModelSerializer):
             if 'phonenumber' in validated_data.keys():
                 user_data.phonenumber = validated_data['phonenumber']
             if 'user' in validated_data.keys():
-                users = User.objects.get(username=user_data.user.username)
+                users = user_data.user
                 if 'username' in validated_data['user'].keys():
                     users.username = validated_data['user']['username']
                 if 'password' in validated_data['user'].keys():
